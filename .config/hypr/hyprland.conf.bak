@@ -1,0 +1,51 @@
+# This config is a STUB! This should never be generated.
+# Use the default lua config from https://github.com/hyprwm/Hyprland/blob/main/example/hyprland.lua
+
+
+
+$mainMod = SUPER
+$terminal = kitty
+$fileManager = dolphin
+$menu = rofi -show run
+
+monitor = eDP-1,1920x1080@60,0x0,1.25
+
+bind = $mainMod, C, killactive,
+bind = $mainMod, M, exec, command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit
+bind = $mainMod, E, exec, $fileManager
+bind = $mainMod, V, togglefloating,
+bind = $mainMod, R, exec, $menu
+bind = SUPER, Q, exec, kitty
+bind = SUPER, D, exec, rofi -show drun
+bind = ALT, TAB, cyclenext
+bind = ALT, TAB, bringactivetotop
+bind = SUPER, B, exec, gtk-launch google-chrome
+bind = SUPER, M, exec, hyprpanel t mediamenu
+
+env = mesa_glthread,true
+env = __GL_THREADED_OPTIMIZATIONS,1
+
+
+exec-once = fcitx5
+#exec-once = waybar
+exec-once = swww init
+exec-once = fcitx5
+exec-once = hyprpaper
+exec-once = swaybg -i /home/joeyjun/Pictures/peakpx.jpg -m fill
+exec-once = swaync
+exec-once = hyprpanel
+
+decoration {
+    rounding = 12
+
+    blur {
+        enabled = true
+        size = 8
+        passes = 3
+    }
+
+    active_opacity = 0.95
+    inactive_opacity = 0.88
+}
+
+exec-once = swaybg -i /home/joeyjun/Pictures/peakpx.jpg -m fill

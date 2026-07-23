@@ -1,0 +1,70 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 36,
+
+  "modules-left": [
+    "custom/menu",
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "custom/spotify"
+  ],
+
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "network",
+    "battery",
+    "tray",
+    "clock"
+  ],
+
+  "clock": {
+    "format": " {:%H:%M}"
+  },
+
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀",
+    "tooltip": true
+  },
+
+  "backlight": {
+    "format": "󰃠 {percent}%",
+    "scroll-step": 5
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 5,
+    "on-click": "pavucontrol"
+  },
+
+  "battery": {
+    "format": " {capacity}%"
+  },
+
+  "custom/spotify": {
+    "exec": "/home/joeyjun/.config/waybar/scripts/spotify.sh",
+    "interval": 2,
+    "return-type": "text",
+    "format": " {}",
+    "tooltip": false
+  },
+
+  "custom/menu": {
+    "format": "󰍜",
+    "on-click": "/home/joeyjun/.config/rofi/menu.sh",
+    "tooltip": false
+  }
+}
