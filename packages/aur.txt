@@ -1,0 +1,16 @@
+aylurs-gtk-shell-git
+bauh
+eww
+google-chrome
+libastal-gjs-git
+libastal-meta
+linux-wallpaperengine-git
+mpvpaper
+pamac-aur
+rofi-wifi-menu-git
+spotify
+ttf-segoe-ui-variable
+waypaper
+wlogout
+yay
+yay-debug
